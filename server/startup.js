@@ -24,16 +24,26 @@ if (Meteor.isServer){
 		 	// in case the file does not exist, put it in a try catch
 		 	try{
 		 		var song = JSON.parse(Assets.getText(filename));
+<<<<<<< HEAD
+console.log("parsed");		 		
+// now flatten the rhythm and tonal features
+=======
 				console.log("Parsed a file........")
 		 		// now flatten the rhythm and tonal features
+>>>>>>> d3851ac45e0387d859592c411a1c945229ccddcf
 		 		// into a single set of properties
 		 		var single_features = {};
 		 		var array_features = {};
 		 		var string_features = {};
 
-		 		rhythm_keys = Object.keys(song.rhythm);
-      			tonal_keys = Object.keys(song.tonal);
+		 		rhythm_keys = Object.keys(song.stats);
       			for (var j=0;j<rhythm_keys.length;j++){
+<<<<<<< HEAD
+      				console.log("type of "+rhythm_keys[j]+" is "+typeof(song.stats[rhythm_keys[j]]));
+      				// only use features that are numbers ... ignore arrays etc. 
+      				if (typeof(song.stats[rhythm_keys[j]]) === "number"){
+      					single_features[rhythm_keys[j]] = song.stats[rhythm_keys[j]];
+=======
       				console.log("type of "+rhythm_keys[j]+" is "+typeof(song.rhythm[rhythm_keys[j]]));
       				// only use features that are numbers ... ignore arrays etc.
       				if (typeof(song.rhythm[rhythm_keys[j]]) === "number"){
@@ -45,9 +55,12 @@ if (Meteor.isServer){
       				}
       				if (typeof(song.rhythm[rhythm_keys[j]]) === "string"){
       					string_features[rhythm_keys[j]] = song.rhythm[rhythm_keys[j]];
+>>>>>>> d3851ac45e0387d859592c411a1c945229ccddcf
       				}
 
       			}
+<<<<<<< HEAD
+=======
       			for (var j=0;j<tonal_keys.length;j++){
       				console.log("type of "+tonal_keys[j]+" is "+typeof(song.tonal[tonal_keys[j]]));
       				if (typeof(song.tonal[tonal_keys[j]]) === "number"){
@@ -61,6 +74,7 @@ if (Meteor.isServer){
       					string_features[tonal_keys[j]] = song.tonal[tonal_keys[j]];
       				}
       			}
+>>>>>>> d3851ac45e0387d859592c411a1c945229ccddcf
 		 		// insert the song to the DB:
 		 		//
 		 		song.single_features = single_features;

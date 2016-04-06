@@ -1,13 +1,13 @@
 {
 "metadata": {
     "tags": {
-        "name": ["Cole C"," Carny"],
+        "name": ["Paul B"],
         "team": ["Cardinals"]
     }
 },
 "stats": {
-    "batting hits": 438,
-    "batting walks":33,
+    "batting hits": 8,
+    "batting walks":3,
     "hits allowed":14,
     "walks allowed":13,
     "strikeouts pitched":14
