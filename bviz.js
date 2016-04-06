@@ -34,7 +34,7 @@ if (Meteor.isClient){
       else {// no song available, return an empty array for politeness
         return [];
       }
-    },
+    },	
   });
 
 ////////////////////////////
@@ -58,8 +58,8 @@ if (Meteor.isClient){
         songs.forEach(function(song){
           //console.log(song);
             features[ind] = {
-              artist:song.metadata.tags.artist,
-              title:song.metadata.tags.title, 
+              artist:song.metadata.tags.name,
+              title:song.metadata.tags.team, 
               value:song[Session.get("feature")["type"]][Session.get("feature")["name"]]
             };
             ind ++;
@@ -171,9 +171,9 @@ function initBlobVis(){
     songs.forEach(function(song){
       // set up a label with the song title and artist
      var label = "ind: "+ind;
-     if (song.metadata.tags.title != undefined){// we have a title
-          label = song.metadata.tags.artist[0] + " - " + 
-          song.metadata.tags.title[0];
+     if (song.metadata.tags.name[0] != undefined){// we have a title
+          label = song.metadata.tags.name[0] + " - " + 
+          song.metadata.tags.team[0];
       } 
       // figure out the value of this feature for this song
       var value = song[Session.get("feature")["type"]][Session.get("feature")["name"]];
