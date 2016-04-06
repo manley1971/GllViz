@@ -5,7 +5,7 @@
 
 if (Meteor.isServer){
 	Meteor.startup(function(){
-		Songs.delete({});
+		Songs.remove({});
 		if (!Songs.findOne()){
 		console.log("no songs yet... creating from filesystem");
 		// pull in the NPM package 'fs' which provides
