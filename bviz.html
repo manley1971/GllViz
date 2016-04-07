@@ -18,7 +18,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">
-       Manley1971-MusicMachine
+      Baseball Visualizer 
 	</a>
         <a class="navbar-brand" href="history">
         history
@@ -40,7 +40,38 @@
 
 <!-- Top level template for the about page -->
 <template name="about_page">
-<h2>About</h2>
+<h1>About</h1>
+<p> Dave Manley wrote an application to take gamechanger data collected in 2016 for four GLL baseball games. Enjoy!</p>
+</template>
+
+<!-- Top level template for the about page -->
+<template name="history_page">
+	<h1>The history of the source of the baseball stats we are viewing according to Wikipedia</h1>
+<blockquote cite="https://en.wikipedia.org/wiki/Little_League_Baseball">
+Little League Baseball and Softball (officially, Little League International) is a non-profit organization based in South Williamsport, Pennsylvania, United States, which organizes local youth baseball and softball leagues throughout the U.S. and the rest of the world although most common ages 7–10
+
+Founded by Carl Stotz in 1939 as a three-team league in Williamsport, Pennsylvania, Little League Baseball encourages local volunteers to organize and operate Little League programs that are annually chartered through Little League International. Each league can structure itself to best serve the children in the area in which the league operates. Several specific divisions of Little League baseball and softball are available to children ages 4 to 18. The organization holds a congressional charter under Title 36 of the United States Code.[1]
+
+The organization's administrative office is located in South Williamsport, Pennsylvania. The first Little League Baseball World Series was played in Williamsport in 1947. The Little League International Complex hosts the annual Little League Baseball World Series at Howard J. Lamade Stadium and Little League Volunteer Stadium, and is also the site of the Peter J. McGovern Little League Museum, which provides a history of Little League Baseball and Softball through interactive exhibits for children. 
+</blockquote>
+
+</template>
+
+<!-- Top level template for the about page -->
+<template name="help_page">
+	<h1>HELP INFO</h1>
+<h4> Instructions: pick a statistic in which you have interest. A graph with be generated for you. </h4>
+
+<h4>Some helpful tips on what is trying to be accomplished:</h4>
+<ul class="list-group">
+<li class="list-group-item">Clear navigation allowing the user to move between pages and locate relevant information</li>
+<li class="list-group-item">Consistent style across the pages through the use of CSS</li>
+<li class="list-group-item">Responsive layout where the layout changes depending on the size of the browser window</li>
+<li class="list-group-item">Use of Bootstrap</li>
+<li class="list-group-item">Clearly stated purpose for each page</li>
+<li class="list-group-item">Clear landing page</li>
+<li class="list-group-item">Source of data is from GLL Gamechanger, the visualization ways are different than the music data.</li>
+</ul>
 </template>
 
 
@@ -71,9 +102,10 @@
 </template>
 
 <template name="song_viz_controls">
+<h1> Little League Baseball Stat Visualizer</h1>
 	<form>
 		<!-- list of available single features -->
-		Single numeric features:
+		Pick a stat to view:
 		<br/>
 		<select class="js-select-single-feature">
 			{{#each get_feature_names "single"}}
