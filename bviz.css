@@ -1,4 +1,18 @@
 /* CSS declarations go here */
+body {
+  background: url(baseball.jpg) repeat fixed;
+  color: #010101;
+	font-weight: 900;
+	font-size:16px;
+ }
+
+
+
+ h1 {
+   font-size: 1.5em;
+   margin: 0;
+   margin-bottom: 10px;
+}
 
 #visjs{
 	height:500px;
