@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Austin D."],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":8 ,
+    "hits":3,
+    "walks":1,
+    "average": 0.375,
+    "on-base": 0.444,
+    "slugging": 0.375,
+    "strikeouts": 3,
+    "pitching-strikeouts":17 ,
+    "pitching-walks":7 ,
+    "pitching-hits-allowed":2 ,
+    "pitching-era":3.00 ,
+    "innings-pitched":6.0 ,
+    "batters-faced":26
+    }
+}

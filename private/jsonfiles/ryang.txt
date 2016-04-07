@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Ryan G."],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":5 ,
+    "hits":2,
+    "walks":0,
+    "average": 0.400,
+    "on-base": 0.400,
+    "slugging": 0.400,
+    "strikeouts": 2 ,
+    "pitching-strikeouts":0 ,
+    "pitching-walks":0 ,
+    "pitching-hits-allowed":0 ,
+    "pitching-era":0.00 ,
+    "innings-pitched":0.0 ,
+    "batters-faced":0
+    }
+}

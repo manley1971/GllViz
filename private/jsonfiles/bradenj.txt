@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Braden J"],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":7 ,
+    "hits":0,
+    "walks":0,
+    "average": 0.000,
+    "on-base": 0.125,
+    "slugging": 0.000,
+    "strikeouts": 6,
+    "pitching-strikeouts":0 ,
+    "pitching-walks":3 ,
+    "pitching-hits-allowed":0 ,
+    "pitching-era":30.00 ,
+    "innings-pitched":0.0 ,
+    "batters-faced":3
+    }
+}

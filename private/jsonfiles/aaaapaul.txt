@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Paul B"],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":6 ,
+    "hits":1,
+    "walks":0,
+    "average": 0.167,
+    "on-base": 0.167,
+    "slugging": 0.167,
+    "strikeouts": 4 ,
+    "pitching-strikeouts":2 ,
+    "pitching-walks":1 ,
+    "pitching-hits-allowed":1 ,
+    "pitching-era":0.00 ,
+    "innings-pitched":1.0 ,
+    "batters-faced":6
+    }
+}

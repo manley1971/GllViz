@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Eli W."],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":9 ,
+    "hits":5,
+    "walks":2,
+    "average": 0.556,
+    "on-base": 0.636,
+    "slugging": 0.556,
+    "strikeouts": 3,
+    "pitching-strikeouts":0 ,
+    "pitching-walks":1 ,
+    "pitching-hits-allowed":1 ,
+    "pitching-era":0.00 ,
+    "innings-pitched":1.0,
+    "batters-faced":3
+    }
+}

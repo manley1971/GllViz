@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Cole C."],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":7 ,
+    "hits":4,
+    "walks":1,
+    "average": 0.571,
+    "on-base": 0.625,
+    "slugging": 0.857,
+    "strikeouts": 0 ,
+    "pitching-strikeouts":16 ,
+    "pitching-walks":3 ,
+    "pitching-hits-allowed":3 ,
+    "pitching-era":1.44 ,
+    "innings-pitched":8.1 ,
+    "batters-faced":31
+    }
+}

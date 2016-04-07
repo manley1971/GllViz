@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Gavin C."],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":9 ,
+    "hits":2,
+    "walks":2,
+    "average": 0.222,
+    "on-base": 0.364,
+    "slugging": 0.444,
+    "strikeouts": 4,
+    "pitching-strikeouts":13 ,
+    "pitching-walks":6 ,
+    "pitching-hits-allowed":3 ,
+    "pitching-era":2.70 ,
+    "innings-pitched":6.2 ,
+    "batters-faced":27
+    }
+}

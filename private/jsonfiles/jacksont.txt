@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Jackson T."],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":6 ,
+    "hits":3,
+    "walks":0,
+    "average": 0.500,
+    "on-base": 0.500,
+    "slugging": 1.167,
+    "strikeouts": 2,
+    "pitching-strikeouts":0 ,
+    "pitching-walks":2 ,
+    "pitching-hits-allowed":0 ,
+    "pitching-era":0.00 ,
+    "innings-pitched":1.0 ,
+    "batters-faced":5
+    }
+}

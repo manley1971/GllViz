@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Tyler F."],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":6 ,
+    "hits":3,
+    "walks":1,
+    "average": 0.500,
+    "on-base": 0.571,
+    "slugging": 0.667,
+    "strikeouts": 2 ,
+    "pitching-strikeouts":0 ,
+    "pitching-walks":0 ,
+    "pitching-hits-allowed":0 ,
+    "pitching-era":0.00 ,
+    "innings-pitched":0.0 ,
+    "batters-faced":0
+    }
+}

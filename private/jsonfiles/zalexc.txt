@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "tags": {
+        "name": ["Alex C"],
+        "team": ["Cardinals"]
+    }
+},
+  "stats": {
+    "at-bats":7 ,
+    "hits":2,
+    "walks":1,
+    "average": 0.286,
+    "on-base": 0.375,
+    "slugging": 0.286,
+    "strikeouts": 3,
+    "pitching-strikeouts":0 ,
+    "pitching-walks":0 ,
+    "pitching-hits-allowed":0 ,
+    "pitching-era":0.00 ,
+    "innings-pitched":0.0 ,
+    "batters-faced":0
+    }
+}
