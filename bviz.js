@@ -2,6 +2,41 @@
 Songs = new Mongo.Collection("songs");
 // this variable will store the visualisation so we can delete it when we need to 
 var visjsobj;
+
+
+
+//Routes recognized by any browser or iron router code
+
+Router.configure({
+    layoutTemplate: 'ApplicationLayout'
+  });
+  // specify the top level route, the page users see when they arrive at the site
+Router.route('/', function () {
+    console.log("rendering root /");
+    this.render("navbar", {to:"header"});
+    this.render("lobby_page", {to:"main"});
+  });
+
+Router.route('/about', function () {
+      this.render("navbar", {to:"header"});
+      this.render("about_page", {to:"main"});
+    });
+
+Router.route('/help', function () {
+          this.render("navbar", {to:"header"});
+          this.render("help_page", {to:"main"});
+        });
+
+Router.route('/history', function () {
+              this.render("navbar", {to:"header"});
+              this.render("history_page", {to:"main"});
+            });
+
+
+
+
+
+
 if (Meteor.isClient){
 
 ////////////////////////////

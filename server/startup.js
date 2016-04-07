@@ -24,9 +24,8 @@ if (Meteor.isServer){
 		 	// in case the file does not exist, put it in a try catch
 		 	try{
 		 		var song = JSON.parse(Assets.getText(filename));
-console.log("parsed");
-// now flatten the rhythm and tonal features
-		 		// into a single set of properties
+				console.log("file was parsed");
+		 		// get set of properties
 		 		var single_features = {};
 		 		var array_features = {};
 		 		var string_features = {};
@@ -52,7 +51,7 @@ console.log("parsed");
 		 		console.log("error parsing file "+filename);
 		 	}
 		}
-		console.log("Inserted "+inserted_songs+" new songs...");
+		console.log("Inserted "+inserted_songs+" new players...");
 	}
 	})
 }

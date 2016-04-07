@@ -1,13 +1,60 @@
 <head>
-  <title>song_data_viz</title>
+  <title>baseball_viz</title>
   <script src="vis.js"></script>
 </head>
 
-<body>
+
+<template name="ApplicationLayout">
+	{{> yield "header"}}
+
+	<div class="container">
+	{{> yield "main"}}
+	</div>
+</template>
+
+<!-- top level template for the nav bar -->
+<template name="navbar">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+       Manley1971-MusicMachine
+	</a>
+        <a class="navbar-brand" href="history">
+        history
+      </a>
+      <a class="navbar-brand" href="help">
+       help
+      </a>
+      <a class="navbar-brand" href="about">
+        about
+      </a>
+    </div>
+    <div class="nav navbar-nav">
+    {{> loginButtons}}
+</div>
+  </div>
+</nav>
+</template>
+
+
+<!-- Top level template for the about page -->
+<template name="about_page">
+<h2>About</h2>
+</template>
+
+
+<!-- Top level template for the lobby page -->
+<template name="lobby_page">
 
 <div class="container">
+
   {{> song_viz}}
-</div>	
+</div>
+</template>
+
+
+<body>
 </body>
 
 <template name="song_viz">

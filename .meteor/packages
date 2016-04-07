@@ -12,3 +12,5 @@ meteorhacks:npm
 
 npm-container
 twbs:bootstrap
+iron:router
+accounts-ui
