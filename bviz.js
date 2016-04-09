@@ -121,15 +121,30 @@ if (Meteor.isClient){
     }, 
     // event handler for when the user clicks on the 
     // blobs button
-     "click .js-show-blobs":function(event){
+     "click .js-show-bar":function(event){
       event.preventDefault();
-      initBlobVis();
+      initBarVis();
     }, 
     // event handler for when the user clicks on the 
-    // timeline button
-     "click .js-show-timeline":function(event){
+    // blobs button
+     "click .js-show-line":function(event){
       event.preventDefault();
-      initDateVis();
+      initLineVis();
+    } ,   // event handler for when the user clicks on the 
+    // blobs button
+     "click .js-show-3d":function(event){
+      event.preventDefault();
+    //  init3dVis();
+    } ,   // event handler for when the user clicks on the 
+    // blobs button
+     "click .js-show-block":function(event){
+      event.preventDefault();
+//      initBlockVis();
+    } ,   // event handler for when the user clicks on the 
+    // blobs button
+     "click .js-show-tree":function(event){
+      event.preventDefault();
+  //    initTreeVis();
     }, 
   }); 
 }
@@ -141,8 +156,8 @@ if (Meteor.isClient){
 ////////////////////////////
 
 
-// function that creates a new timeline visualisation
-function initDateVis(){
+// function that creates a new  line chart visualisation
+function initBarVis(){
   // clear out the old visualisation if needed
   if (visjsobj != undefined){
     visjsobj.destroy();
@@ -157,19 +172,19 @@ function initDateVis(){
   // iterate the songs collection, converting each song into a simple
   // object that the visualiser understands
   songs.forEach(function(song){
-    if (song.metadata.tags.date != undefined && 
-      song.metadata.tags.date[0] != undefined ){
+    if (song.metadata.tags.name != undefined && 
+      song.metadata.tags.name[0] != undefined ){
       var label = "ind: "+ind;
-      if (song.metadata.tags.title != undefined){// we have a title
-        label = song.metadata.tags.artist[0] + " - " + 
-        song.metadata.tags.title[0];
+      if (song.metadata.tags.name != undefined){// we have a title
+        label = song.metadata.tags.name[0] + " - " + 
+        song.metadata.tags.team[0];
       }  
       var value = song[Session.get("feature")["type"]][Session.get("feature")["name"]];
-      var date = song.metadata.tags.date[0] + "-01-01";
+      //var date = "01-01-01";
       // here we create the actual object for the visualiser
       // and put it into the items array
       items[ind] = {
-        x: date, 
+        x:label,//x: date, 
         y: value, 
         // slighlty hacky label -- check out the vis-label
         // class in song_data_viz.css 
@@ -180,7 +195,7 @@ function initDateVis(){
   });
   // set up the data plotter
   var options = {
-    style:'bar', 
+    style:'surface', 
   };
   // get the div from the DOM that we are going to 
   // put our graph into 
@@ -192,7 +207,7 @@ function initDateVis(){
 }
 
 // function that creates a new blobby visualisation
-function initBlobVis(){
+function initLineVis(){
   // clear out the old visualisation if needed
   if (visjsobj != undefined){
     visjsobj.destroy();
@@ -205,6 +220,7 @@ function initBlobVis(){
   // a node object that the visualiser can understand
     songs.forEach(function(song){
       // set up a label with the song title and artist
+     console.log("another player"+song.metadata.tags.team[0]);
      var label = "ind: "+ind;
      if (song.metadata.tags.name[0] != undefined){// we have a title
           label = song.metadata.tags.name[0] + " - " + 

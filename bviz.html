@@ -41,7 +41,7 @@
 <!-- Top level template for the about page -->
 <template name="about_page">
 <h1>About</h1>
-<p> Dave Manley wrote an application to take gamechanger data collected in 2016 for four GLL baseball games. Enjoy!</p>
+<p> Dave Manley wrote an application to take gamechanger data collected for GLL baseball games. Enjoy!</p>
 </template>
 
 <!-- Top level template for the about page -->
@@ -60,7 +60,7 @@ The organization's administrative office is located in South Williamsport, Penns
 <!-- Top level template for the about page -->
 <template name="help_page">
 	<h1>HELP INFO</h1>
-<h4> Instructions: pick a statistic in which you have interest. A graph with be generated for you. </h4>
+<h4> Instructions: pick a statistic in which you have interest. A graph with be generated for you with other, related statistics, be they from different years or the same year but different stats. </h4>
 
 <h4>Some helpful tips on what is trying to be accomplished:</h4>
 <ul class="list-group">
@@ -112,6 +112,16 @@ The organization's administrative office is located in South Williamsport, Penns
 			<option value="{{name}}">{{name}}</option>
 			{{/each}}
 		</select>
+
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default js-show-bar">Overlapping Bar</button>
+  <button type="button" class="btn btn-default js-show-line">Line Chart</button>
+  <button type="button" class="btn btn-default js-show-tree">Tree</button>
+  <button type="button" class="btn btn-default js-show-block">Block</button>
+  <button type="button" class="btn btn-default js-show-3d">3D</button>
+</div>
+
+
 		<button class="btn js-show-blobs">blobs</button>
 		<button class="btn js-show-timeline">timeline</button>
 	</form>
