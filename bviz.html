@@ -105,7 +105,7 @@ The organization's administrative office is located in South Williamsport, Penns
 <h1> Little League Baseball Stat Visualizer</h1>
 	<form>
 		<!-- list of available single features -->
-		Pick a stat to view:
+		Pick a stat to view and one of the five buttons for team projection of:
 		<br/>
 		<select class="js-select-single-feature">
 			{{#each get_feature_names "single"}}
@@ -114,15 +114,15 @@ The organization's administrative office is located in South Williamsport, Penns
 		</select>
 
 <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default js-show-bar">Overlapping Bar</button>
+  <button type="button" class="btn btn-default js-show-bar">Bar</button>
   <button type="button" class="btn btn-default js-show-line">Line Chart</button>
-  <button type="button" class="btn btn-default js-show-tree">Tree</button>
-  <button type="button" class="btn btn-default js-show-block">Block</button>
-  <button type="button" class="btn btn-default js-show-3d">3D</button>
+  <button type="button" class="btn btn-default js-show-tree">Future Projection</button>
+  <button type="button" class="btn btn-default js-show-block">Conservative Mix</button>
+  <button type="button" class="btn btn-default js-show-3d">History</button>
 </div>
 <br>
-
-		<button class="btn js-show-pitching-bar">Pitching chart</button>
+<br>
+<p> Existing Data (fixed, does not matter what is on dropdown)</p>
 		<button class="btn js-show-hitting-bar">Hitting chart</button>
 	</form>
 </template>	
