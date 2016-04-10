@@ -402,9 +402,9 @@ function init3dVis(){
         showShadow: true,
         keepAspectRatio: true,
         verticalRatio: 0.8,
-        xLabel:"strikes",
-        yLabel:"balls",
-        zLabel:"projected "+Session.get("feature")["name"],
+        xLabel:"strike",
+        yLabel:"ball",
+        zLabel:Session.get("feature")["name"],
         filterLabel:"distance",
         legendLabel:"quality"
     };
@@ -462,11 +462,9 @@ function init3dVis2(){
         showShadow: true,
         keepAspectRatio: true,
         verticalRatio: 0.8,
-        xLabel:"runs",
-        yLabel:"b",
+        xLabel:"run",
+        yLabel:"ball",
         zLabel:Session.get("feature")["name"],
-        filterLabel:"distance",
-        legendLabel:"quality"
     };
 
     // Instantiate our graph object.
@@ -523,7 +521,7 @@ function init3dVis3(){
         showShadow: true,
         keepAspectRatio: true,
         verticalRatio: 0.8,
-        xLabel:"str",
+        xLabel:"strike",
         yLabel:"ball",
         zLabel:" "+Session.get("feature")["name"],
     };
